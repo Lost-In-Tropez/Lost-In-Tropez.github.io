@@ -1,0 +1,232 @@
+/* body {
+    background-color: rgb(254, 249, 242);
+} */
+body {
+    height: 100vh;
+    z-index: -1;
+    text-align: center;
+    margin: auto;
+    /* font-size: 1vh; */
+
+
+
+}
+
+.bg {
+    background-color: rgb(254, 249, 242);
+
+    text-align: center;
+    z-index: -1;
+    height: 100%;
+    margin: auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+.glenn-display{
+
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-size: 10vw;
+}
+
+.front-block {
+    /* text-align: center; */
+
+    /* The image used */
+    background-image: url(../img/ocean-breeze.gif);
+    height: 100%;
+    /* Full height */
+    /* margin-top:20%;*/
+    
+    z-index: -1;
+    margin: auto; 
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+/* .front-img {
+    text-align: center;
+    background-image: url(../img/logo-clear.png);
+    background-size: 100%;
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: relative;
+} */
+
+.letter-links{
+    padding-top: 25vh;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    font-size: 15vw;
+}
+
+.box {
+    margin: auto;
+    opacity: .45;
+
+    -webkit-clip-path:polygon(0 0, 100% 35%, 100% 65%, 150% 100%);
+    /* clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
+    /* clip-path: polygon(0 0, 100% 0%, 100% 40%, 0% 100%); */
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+    clip-path: circle(50% at 50% 50%);
+
+    width:100vw;
+    height:100vh;
+    background:rgb(254, 249, 242);
+    z-index: -1;
+    position: relative;
+
+   }
+
+
+
+
+   .icon-bar {
+    position: fixed;
+    opacity: .8;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .instagram {
+    background: #3f729b;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .soundcloud {
+    background: #ff7700;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+.logo-inline {
+    width: 8vw;
+    height: 8vw;
+}
+
+.sc-banner {
+    display: inline-block;
+    opacity: .8;
+
+    top: 50%;
+    width: 30%;
+    margin: auto;
+    padding-left: 10%;
+    position: fixed;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+@media only screen 
+    and (max-device-width : 1000px) 
+    {
+
+        body {
+            height: 100vh;
+            z-index: -1;
+            text-align: center;
+            margin: auto;
+        
+        }
+
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+          }
+
+        .box {
+            margin: auto;
+            opacity: .45;
+        
+            /* -webkit-clip-path:polygon(0 0, 100% 35%, 100% 65%, 150% 100%); */
+            /* clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
+            /* clip-path: polygon(0 0, 100% 0%, 100% 40%, 0% 100%); */
+            /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+            clip-path: circle(110% at 50% 50%);
+        
+            width:100vw;
+            height:100vh;
+            background-color:rgb(254, 249, 242);
+            z-index: 1;
+            position: relative;
+        
+           }
+        
+        .bg {
+            background-color: rgb(254, 249, 242);
+        
+            text-align: center;
+            z-index: -1;
+            height: 100%;
+            margin: auto; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+          }
+    
+          .sc-banner {
+            display: inline-block;
+            opacity: .8;
+        
+            top: 90%;
+            width: 100%;
+            margin: auto;
+            padding-left: 0;
+            position: fixed;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        
+    
+    }
