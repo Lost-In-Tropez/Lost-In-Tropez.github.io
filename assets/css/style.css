@@ -166,7 +166,7 @@ body {
     {
 
         body {
-            height: 100vh;
+            height: 100%;
             z-index: -1;
             text-align: center;
             margin: auto;
@@ -218,7 +218,7 @@ body {
             display: inline-block;
             opacity: .8;
         
-            top: 80%;
+            top: 75%;
             width: 100%;
             margin: auto;
             padding-left: 0;
