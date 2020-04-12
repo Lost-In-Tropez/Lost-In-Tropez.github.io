@@ -218,7 +218,7 @@ body {
             display: inline-block;
             opacity: .8;
         
-            top: 90%;
+            top: 80%;
             width: 100%;
             margin: auto;
             padding-left: 0;
@@ -227,6 +227,12 @@ body {
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
+
+        .glenn-display{
+
+          font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+          font-size: 15vw;
+      }
         
     
     }
