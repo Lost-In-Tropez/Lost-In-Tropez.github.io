@@ -129,6 +129,7 @@ body {
   .soundcloud {
     background: #ff7700;
     color: white;
+    margin-left: -5.916px;
   }
   
   .linkedin {
@@ -183,7 +184,8 @@ body {
           }
 
         .box {
-            margin: auto;
+            /* visibility: hidden; */
+            /* margin: auto; */
             opacity: .45;
         
             /* -webkit-clip-path:polygon(0 0, 100% 35%, 100% 65%, 150% 100%); */
@@ -192,8 +194,12 @@ body {
             /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
             clip-path: circle(110% at 50% 50%);
         
-            width:100vw;
-            height:100vh;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw; /* Full width (cover the whole page) */
+            height: 100vh; /* Full height (cover the whole page) */
             background-color:rgb(254, 249, 242);
             z-index: 1;
             position: relative;
@@ -233,6 +239,17 @@ body {
           font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
           font-size: 15vw;
       }
+
+
+   .icon-bar {
+    position: fixed;
+    opacity: .8;
+    top: 35%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+  }
         
     
     }
