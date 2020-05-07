@@ -2,7 +2,7 @@
     background-color: rgb(254, 249, 242);
 } */
 body {
-    height: 100vh;
+    height: 100%;
     z-index: -1;
     text-align: center;
     margin: auto;
@@ -43,7 +43,7 @@ body {
 
     /* The image used */
     background-image: url(../img/ocean-breeze.gif);
-    height: 100%;
+    height: auto;
     /* Full height */
     /* margin-top:20%;*/
     
@@ -324,7 +324,7 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
-            position: relative;
+            position: fixed;
           }
 
           .lit-align {
@@ -343,7 +343,7 @@ body {
             width: 100%;
             margin: auto;
             padding: auto;
-            position: fixed;
+            position: absolute;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -430,7 +430,7 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
-            position: relative;
+            position: fixed;
           }
 
           .lit-align {
@@ -449,7 +449,7 @@ body {
             width: 100%;
             margin: auto;
             padding: auto;
-            position: fixed;
+            position: absolute;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -535,7 +535,7 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
-            position: relative;
+            position: fixed;
           }
 
           .lit-align {
@@ -554,7 +554,7 @@ body {
             width: 100%;
             margin: auto;
             padding: auto;
-            position: fixed;
+            position: absolute;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -639,7 +639,7 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
-            position: relative;
+            position: fixed;
           }
 
           .lit-align {
@@ -658,7 +658,7 @@ body {
             width: 100%;
             margin: auto;
             padding: auto;
-            position: fixed;
+            position: absolute;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
