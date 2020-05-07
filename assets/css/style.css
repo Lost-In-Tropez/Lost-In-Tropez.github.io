@@ -263,3 +263,107 @@ body {
         
     
     }
+
+  /* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+  /* some CSS here */
+        .g-container {
+        padding: 0;
+        /* margin:auto; */
+      }
+
+        body {
+            height: 100vh;
+            z-index: -1;
+            text-align: center;
+            margin: auto;
+
+
+        }
+
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+          }
+
+        .box {
+            /* visibility: hidden; */
+            /* margin: auto; */
+            opacity: .45;
+
+            /* -webkit-clip-path:polygon(0 0, 100% 35%, 100% 65%, 150% 100%); */
+            /* clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
+            /* clip-path: polygon(0 0, 100% 0%, 100% 40%, 0% 100%); */
+            /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+            /* clip-path: circle(110% at 50% 50%); */
+
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw; /* Full width (cover the whole page) */
+            height: 100vh; /* Full height (cover the whole page) */
+            background-color:rgb(254, 249, 242);
+            z-index: 1;
+            position: relative;
+
+           }
+
+        .bg {
+            background-color: rgb(254, 249, 242);
+
+            text-align: center;
+            z-index: -1;
+            height: 100%;
+            margin: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+          }
+
+          .lit-align {
+          width:100%;
+          position: center;
+          text-align:center;
+          }
+
+          .sc-banner {
+            display: inline-block;
+            opacity: .8;
+            position: relative;
+            text-align:center;
+
+            top: 100%;
+            width: 100%;
+            margin: auto;
+            padding: auto;
+            position: fixed;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .glenn-display{
+
+          font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+          font-size: 15vw;
+      }
+
+
+   .icon-bar {
+    position: fixed;
+    opacity: .8;
+    top: 35%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+
+}
