@@ -24,6 +24,7 @@
 
 
 <body class = "home">
+  <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
 
 
 
@@ -46,46 +47,75 @@
 <div class="sc-banner">
   </div>
 
+
 <div class="lit-align">
 
-<div class = "bg">
+<div class = "blogbg">
 
     <div class="front-block-blog">
-
-        <div class="g-container">
       
-          <div class="box-blog">
-
+          <!-- <div class="box-blog"> -->
+            <h4 class="epk-display"><br><br>
+              Lost
+             In
+            Tropez</h4>
 
             <div class = "blog-letter-links">
 
               <h1><img src="assets/img/logo-clear.png" class = "blog-logo-inline" alt=""></h1>
-                <h3 class="glenn-display">25:52</h3>
-    
+                  <div style="display: table-row;">
+                    
+                    <div style="width: 50%; float: left; height: 60vh">
+                      <iframe width="75%" height="315" src="https://www.youtube.com/embed/0DSmyDYTkRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <div id="embed-iframe" >
+
+                    </div>
+                  </div>
+
+
+
+                      <div class="g-container">
+
+
+                    <div style="margin-left: 50%; height: 100px;"> 
                     <p class="lead">
                         <br>
                         <br>
                         <b>
-                    Junak is our newest and last single off our first full length album, 25:52. 
-                    It brings together sounds from Latin America and French house to create a driving sound that leaves you wanting more.
+                          The seeds of Lost in Tropez’ indie-dance sound – sometimes whimsical and
+                          sometimes gritty – took root in the southern California beaches where they met in school. 
+                          <br><br>
+                          The Southern California artist’s background in guitar and piano evolved into electronic production as they dialed in on a sound together.
+                          The juxtapositions of Lost in Tropez with the music that inspire Ope songs, like the driving melodies of deep house, 
+                          or the intense trap sounds brough in by RC highlight how different sounds and artists can create something new entirely.
+                          <br><br>
+                          Their first full length album, 25:52, was inspired while the two artists explored San Diego's music scene. The freedom of travel, and the solitude of nature and connection with an audience,
+                          weave rich storylines into their melodies and samples. Many of the songs on their first studio EP, Ocean Vies, released in fall 2019, were written and recorded off an iphone and childhood guitar.
+                          25:52 is the result of continual progress as the artists explored a new sound together that they have yet to hear in mainstream EDM.
+                          <br><br>
+                          Turquoise, one of the album’s driving guitar tracks, reflects on Ope's
+                          journey to the OC to rejoin RC and get back in the studio. The two friends climbed onto the roof of RC's appartment with a laptop, keyboard
+                          and guitar and quickly made what became on of their best tracks to date.
+                          <br><br>
+                          The album’s first single, Pieces, was inspired by Polo and Pan, among others like Moderat, The Avalanches, and Romy. 
+                          <br><br>
+                          Their newest and last single before the album is Junak. Junak is the result of a continual feedback loop as the artists ripped, gutted, and built the track 10 times over.
+                          They are proud to release Junak as it combines cultures and sounds from Northern, Central and South America - 
+                          bringing people together with music is their favorite aspect of it, in both the production and listening aspects.
+                          <br><br>
+                          Now the two manage to juggle full time careers, music, and graduate school with the intention of pouring more and more time towards making music.
+                          Over the next year, that includes playing shows, setting up a tour, and getting back into the
+                          studio to record their second full-length album.
                         <br><br>
-                    Junak has been recognized and selected for several prominent playlists and blogs and we are excited to showcase our new direction and sound.
-                    Ocean Views joined together for the first time two independent artists, Ope and R.C. along with fusing their deep house and trap tendencies.
-                    Our first album sees the emergence of a new sound that brings together fun, carnival like sounds with smooth melodies and powerful vocals.
-                        <br><br>
-                    We have previously been showcased on several blogs and one of our singles, Pieces, was selected to be a part of the wonderful charity playlist Opportunities where all proceeds were sent to charity.
                         </b>
                     </p>
-      </div>
-        
+      <!-- </div> -->
+            </div>
+            
             </div>
     
-            <!-- <p class="lead">
-              <br>
-              <br>
-              <a href="blog.html" class = "blog-button">25:52</a>
-            </p>
-          </div> -->
+              </div>
     
     
         </div>
@@ -94,7 +124,27 @@
             </div>
             </div>
 
-
+            <script type="text/javascript">
+              window.onSpotifyIframeApiReady = (IFrameAPI) => {
+                let element = document.getElementById('embed-iframe');
+                let options = {
+                    width: '75%',
+                    height: '60%',
+                    uri: 'spotify:artist:096eAkqw7ujpqZSDcELHlE',
+                    backgroundcolor: 'antiquewhite',
+                  borderradius:'10px 120px 30px 120px',
+                  };
+                let callback = (EmbedController) => {
+                  document.querySelectorAll('ul#episodes > li > button').forEach(
+                    episode => {
+                      episode.addEventListener('click', () => {
+                        EmbedController.loadUri(episode.dataset.spotifyId)
+                      });
+                    })
+                };
+                IFrameAPI.createController(element, options, callback);
+              };
+            </script>
 </div>
 </div>
 </div>

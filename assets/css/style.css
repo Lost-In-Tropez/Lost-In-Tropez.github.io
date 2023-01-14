@@ -27,9 +27,26 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
+    overflow: auto;
     position: relative;
   }
+
+.blogbg {
+    background-color: rgb(254, 249, 242);
+    text-align: center;
+    z-index: -1;
+    margin: auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .epk-display{
+
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-size: 5vw;
+}
+
 
 .glenn-display{
 
@@ -61,8 +78,6 @@ body {
 
     /* The image used */
     background-image: url(../img/tropez.jpg);
-    height: auto;
-    z-index: -1;
     margin: auto; 
     /* Center and scale the image nicely */
     background-position: left;
@@ -70,6 +85,8 @@ body {
     background-size: cover;
     overflow: auto;
     position: relative;
+    background-color: antiquewhite;
+    opacity: .5;
   }
 
 /* .front-img {
@@ -89,38 +106,35 @@ body {
     margin: auto;
     width: 50%;
     height: 50%;
-    font-size: 15vw;
 }
 
 .lead {
   position: relative;
   opacity: 1;
   z-index: 102;
-  overflow: scroll;
+  overflow: auto;
+  background-color: antiquewhite;
+  border-radius: 10px 120px 30px 120px;
+  width: 100%;
+  height: 60vh;
+  opacity: .8;
+  font-size: 2vw;
+  padding-left: 3%;
+  padding-right: 2%;
 }
 
-.lead {
-  position: relative;
-  opacity: 1;
-  z-index: 102;
-  overflow: scroll;
-}
 
-.lead {
-  position: relative;
-  opacity: 1;
-  z-index: 102;
-  overflow: scroll;
+.embed-iframe {
+  background-color: antiquewhite;
+  border-radius: 10px 120px 30px 120px;
 }
 
 .blog-letter-links{
   /* position: relative; */
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
   margin: auto;
-  width: 50%;
-  height: 100%;
-  font-size: 15vw;
-  overflow: scroll;
+  width: 100%;
+  height: 100vh;
 }
 
 
@@ -147,7 +161,7 @@ body {
   background:rgb(254, 249, 242);
   z-index: -1;
   position: relative;
-  overflow: scroll;
+  overflow: auto;
  }
 
 
@@ -757,27 +771,3 @@ body {
     z-index: 100;
   }
 }
-
-
-
-/* 
-
-
-The seeds of Lost in Tropez’ indie-dance sound – sometimes whimsical and
-sometimes gritty – took root in the southern California beaches where they met in school. 
-
-The Southern California artist’s background in guitar and piano evolved into electronic production as they progressed.
-The juxtapositions that inspire Phill’s songs, like the comfort of family and the
-freedom of travel, or the solitude of nature and connection with an audience,
-weave rich storylines into his lyrics. Many of the songs on his first studio EP, self-
-titled Phillip Alexander Nugent and released in fall 2019, are inspired by his wife
-Michelle and his sons Miles and Beck.
-Girl in London, one of the album’s quieter, acoustic tracks, reflects on Phill’s
-journey to the U.K. to propose to Michelle. The ethereal Stargazers harks back to
-their travels in France and nights spent by campfire. The EP’s first single, Almost
-Perfect, was inspired by Gord Downie – one of Phill’s major musical influences,
-among others like Paul Simon, Neil Young, Foo Fighters and The Lumineers.
-Now as a father, moving his career as a recording artist forward and showing his
-sons we can all pursue our dreams means even more to Phill. Over the next year,
-that includes playing music festivals, setting up a tour, and getting back into the
-studio to record his first full-length album. */
