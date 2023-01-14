@@ -57,6 +57,25 @@ body {
     position: relative;
   }
 
+  .front-block-blog {
+    /* text-align: center; */
+
+    /* The image used */
+    background-image: url(../img/tropez.jpg);
+    height: auto;
+    /* Full height */
+    /* margin-top:20%;*/
+    
+    z-index: -1;
+    margin: auto; 
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
 /* .front-img {
     text-align: center;
     background-image: url(../img/logo-clear.png);
@@ -69,12 +88,42 @@ body {
 } */
 
 .letter-links{
+    position: relative;
     padding-top: 25vh;
     margin: auto;
     width: 50%;
     height: 50%;
     font-size: 15vw;
 }
+
+.lead {
+  position: relative;
+  opacity: 1;
+  z-index: 102;
+}
+
+.blog-letter-links{
+  position: relative;
+  padding-top: 10vh;
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  font-size: 15vw;
+}
+
+
+.blog-lead {
+  position: relative;
+  opacity: 1;
+  z-index: 102;
+}
+
+.blog-button {
+  position: relative;
+  opacity: .8;
+  z-index: 100;
+}
+
 
 .box {
     margin: auto;
@@ -93,9 +142,6 @@ body {
     position: relative;
 
    }
-
-
-
 
    .icon-bar {
     position: fixed;
@@ -151,6 +197,11 @@ body {
 .logo-inline {
     width: 8vw;
     height: 8vw;
+}
+
+.blog-logo-inline {
+  width: 25vw;
+  height: 25vw;
 }
 
 .sc-banner {
